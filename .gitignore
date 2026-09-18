@@ -1,0 +1,49 @@
+# --- Data: never commit ---------------------------------------------------
+# EMSCAD dataset - download from Kaggle, see README
+fake_job_postings.csv
+
+# Adzuna API output - contains real company names and their job text
+adzuna_jobs_unlabeled.csv
+adzuna_jobs_labeled.csv
+
+# Any other data file
+*.csv
+*.tsv
+*.xlsx
+*.json
+!requirements.json
+
+# --- Trained models -------------------------------------------------------
+# Large, and re-creatable by running the training cell
+*.pkl
+*.joblib
+*.h5
+
+# --- Secrets --------------------------------------------------------------
+.env
+.env.*
+secrets.py
+config.py
+*.key
+
+# --- Python ---------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# --- Notebooks ------------------------------------------------------------
+# Working copies - only the cleaned "_public" notebook belongs in the repo
+*-checkpoint.ipynb
+*_draft.ipynb
+*_working.ipynb
+
+# --- Editors and OS -------------------------------------------------------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
